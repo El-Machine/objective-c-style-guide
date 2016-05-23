@@ -77,15 +77,15 @@ Project tree must be organized like:
 
 ## Spacing
 
-* Indent using 2 spaces (this conserves space in print and makes line wrapping less likely). Never indent with tabs. Be sure to set this preference in Xcode.
+* Indent using tab.
 * Method braces and other braces (`if`/`else`/`switch`/`while` etc.) always open on the same line as the statement but close on a new line.
 
 **Preferred:**
 ```objc
 if (user.isHappy) {
-  //Do something
+	//Do something
 } else {
-  //Do something else
+	//Do something else
 }
 ```
 
@@ -93,10 +93,10 @@ if (user.isHappy) {
 ```objc
 if (user.isHappy)
 {
-    //Do something
+  //Do something
 }
 else {
-    //Do something else
+          //Do something else
 }
 ```
 
@@ -152,7 +152,7 @@ UIButton *settingsButton;
 UIButton *setBut;
 ```
 
-A three letter prefix should always be used for class names and constants, however may be omitted for Core Data entity names. For any official raywenderlich.com books, starter kits, or tutorials, the prefix 'RWT' should be used.
+A three letter prefix should always be used for class names and constants, however may be omitted for Core Data entity names.
 
 Constants should be camel-case with all words capitalized and prefixed by the related class name for clarity.
 
@@ -662,22 +662,6 @@ A long line of code like this should be carried on to the second line adhering t
 self.productsRequest = [[SKProductsRequest alloc] 
   initWithProductIdentifiers:productIdentifiers];
 ```
-
-
-## Smiley Face
-
-Smiley faces are a very prominent style feature of the raywenderlich.com site!  It is very important to have the correct smile signifying the immense amount of happiness and excitement for the coding topic.  The end square bracket is used because it represents the largest smile able to be captured using ascii art.  A half-hearted smile is represented if an end parenthesis is used, and thus not preferred.
-
-**Preferred:**
-```objc
-:]
-```
-
-**Not Preferred:**
-```objc
-:)
-```  
-
 
 ## Xcode project
 
