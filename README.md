@@ -71,46 +71,24 @@ UIColor *myColour = [UIColor whiteColor];
 
 ## Code Organization
 
-Use `#pragma mark -` to categorize methods in functional groupings and protocol/delegate implementations following this general structure.
+Do not use `#pragma mark -` to categorize methods. Use categories instead.
 
-```objc
-#pragma mark - Lifecycle
+Project tree must be organized like:
 
-- (instancetype)init {}
-- (void)dealloc {}
-- (void)viewDidLoad {}
-- (void)viewWillAppear:(BOOL)animated {}
-- (void)didReceiveMemoryWarning {}
-
-#pragma mark - Custom Accessors
-
-- (void)setCustomProperty:(id)value {}
-- (id)customProperty {}
-
-#pragma mark - IBActions
-
-- (IBAction)submitData:(id)sender {}
-
-#pragma mark - Public
-
-- (void)publicMethod {}
-
-#pragma mark - Private
-
-- (void)privateMethod {}
-
-#pragma mark - Protocol conformance
-#pragma mark - UITextFieldDelegate
-#pragma mark - UITableViewDataSource
-#pragma mark - UITableViewDelegate
-
-#pragma mark - NSCopying
-
-- (id)copyWithZone:(NSZone *)zone {}
-
-#pragma mark - NSObject
-
-- (NSString *)description {}
+```
+* Controllers
+  * Controller
+  	* Headers
+  	* Class
+  	* Categories
+  	* Storyboards
+* Models
+* Views
+* Library
+  * Base Classes
+  * Base Object Extensions
+  * Utility classes and managers
+* Application
 ```
 
 ## Spacing
