@@ -75,6 +75,10 @@ Project tree must be organized like:
   * Utility classes and managers
 * Application
 
+## UI
+
+Create UI using Storyboards whenever it possible, devide storyboards by logical application flows. If something possible to create using storyboard, NEVER do it in code
+
 ## Spacing
 
 * Indent using tab.
