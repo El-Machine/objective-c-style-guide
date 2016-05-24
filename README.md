@@ -57,7 +57,7 @@ UIColor *myColour = [UIColor whiteColor];
 
 ## Code Organization
 
-Do not use `#pragma mark -` to categorize methods. Use categories instead.
+Do not use `#pragma mark -` to categorize methods. Use categories instead. more at [habrahabr.ru](https://habrahabr.ru/post/262415/)
 
 Project tree must be organized like:
 
@@ -74,6 +74,8 @@ Project tree must be organized like:
   * Base Object Extensions
   * Utility classes and managers
 * Application
+
+more at [habrahabr.ru](https://habrahabr.ru/post/261907/)
 
 ## UI
 
