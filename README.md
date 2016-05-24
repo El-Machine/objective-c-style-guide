@@ -36,7 +36,6 @@ Here are some of the documents from Apple that informed the style guide. If some
 * [Error handling](#error-handling)
 * [Singletons](#singletons)
 * [Line Breaks](#line-breaks)
-* [Smiley Face](#smiley-face)
 * [Xcode Project](#xcode-project)
 
 
@@ -84,7 +83,7 @@ Create UI using Storyboards whenever it possible, devide storyboards by logical 
 ## Spacing
 
 * Indent using tab.
-* Method braces and other braces (`if`/`else`/`switch`/`while` etc.) always open on the same line as the statement but close on a new line.
+* Method braces open and close on the new line. Other braces (`if`/`else`/`switch`/`while` etc.) always open on the same line as the statement but close on a new line.
 
 **Preferred:**
 ```objc
@@ -93,6 +92,12 @@ if (user.isHappy) {
 } else {
 	//Do something else
 }
+
+- (void)method
+{
+	return;
+}
+
 ```
 
 **Not Preferred:**
